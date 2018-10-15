@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Teste
+Bundle-SymbolicName: Teste
+Bundle-Version: 1.0.0.qualifier
+Export-Package: br.com.matheus.Teste,
+ br.com.matheus.modelo,
+ br.com.matheus.util.log
