@@ -2,7 +2,7 @@ package br.com.matheus.modelo;
 
 import java.io.Serializable;
 
-public class Cliente implements Serializable {
+public class Cliente implements Autenticadora, Serializable {
 	/**
 	 * 
 	 */
@@ -14,6 +14,7 @@ public class Cliente implements Serializable {
 	private String email;
 	private String telefone;
 
+	@Override
 	public long getId() {
 		return id;
 	}

@@ -7,7 +7,7 @@ import java.math.BigDecimal;
  * Hello world!
  *
  */
-public class Produto implements Serializable {
+public class Produto implements Autenticadora, Serializable {
 	/**
 	 * 
 	 */
@@ -17,6 +17,7 @@ public class Produto implements Serializable {
 	private String nome;
 	private BigDecimal valor;
 
+	@Override
 	public long getId() {
 		return id;
 	}

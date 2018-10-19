@@ -2,7 +2,7 @@ package br.com.matheus.modelo;
 
 import java.io.Serializable;
 
-public class Login implements Serializable{
+public class Login implements Autenticadora, Serializable{
 	/**
 	 * 
 	 */
@@ -11,6 +11,7 @@ public class Login implements Serializable{
 	private String usuario;
 	private String senha;
 
+	@Override
 	public long getId() {
 		return id;
 	}

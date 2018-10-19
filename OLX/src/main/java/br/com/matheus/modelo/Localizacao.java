@@ -2,7 +2,7 @@ package br.com.matheus.modelo;
 
 import java.io.Serializable;
 
-public class Localizacao implements Serializable {
+public class Localizacao implements Autenticadora, Serializable {
 	/**
 	 * 
 	 */
@@ -13,6 +13,7 @@ public class Localizacao implements Serializable {
 	private String cep;
 	private String endereco;
 
+	@Override
 	public long getId() {
 		return id;
 	}
