@@ -27,12 +27,12 @@ public class LoggingInterceptor {
 	
 	@AroundInvoke
 	public Object logMethod(InvocationContext ic) throws Exception {
-	   logger.fine("Entrando no método interceptador");
+	   logger.info("Método " + ic.getMethod().getName() + " interceptado");
 		logger.entering(ic.getTarget().toString(), ic.getMethod().toString());
 		try {
 			return ic.proceed();
 		} finally {
-		   logger.fine("Saindo no método interceptador");
+		   logger.info("Saindo no método interceptador " + ic.getMethod().getName());
 		   logger.exiting(ic.getTarget().toString(), ic.getMethod().toString());
 		}
 	}

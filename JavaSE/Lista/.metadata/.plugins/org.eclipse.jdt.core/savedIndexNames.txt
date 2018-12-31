@@ -1,0 +1,25 @@
+INDEX VERSION 1.130+/home/matheus/Documentos/Programacao/Java/JavaSE/Lista/.metadata/.plugins/org.eclipse.jdt.core
+389884561.index
+1305834887.index
+2702366956.index
+1221552779.index
+2185774889.index
+2402174544.index
+4035851100.index
+457290037.index
+1152573384.index
+1239462115.index
+343080973.index
+437128398.index
+4204574953.index
+1568552481.index
+2834487928.index
+1743899277.index
+2357089003.index
+4128408873.index
+482319129.index
+2524895788.index
+2898143337.index
+3066399230.index
+940896267.index
+2532588238.index

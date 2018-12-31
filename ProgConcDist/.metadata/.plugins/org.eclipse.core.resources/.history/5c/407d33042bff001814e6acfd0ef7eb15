@@ -1,0 +1,27 @@
+package udp;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
+
+public class Cliente {
+	public static void main(String[] args) {
+		byte[] mensagem = new byte[1000];
+		
+		try {
+			DatagramSocket cliente = new DatagramSocket();
+			DatagramPacket pacoteSaida = new DatagramPacket(mensagem, mensagem.length);
+			
+			cliente.send(pacoteSaida);
+			
+			DatagramPacket pacoteEntrada = new DatagramPacket(mensagem, mensagem.length, InetAddress.getLocalHost(), 12345); 
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+}

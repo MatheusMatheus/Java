@@ -1,0 +1,5 @@
+package rmi.cliente;
+
+public class Cliente {
+
+}

@@ -1,0 +1,201 @@
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:22:32.437
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 4 16973825 2018-08-26 19:22:34.871
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:23:56.255
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 4 16973825 2018-08-26 19:23:57.385
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:29:43.674
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 4 16973825 2018-08-26 19:29:47.986
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:30:45.892
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-26 19:30:51.370
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-08-26 19:32:47.198
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:33:00.615
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-26 19:33:03.520
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-08-26 19:35:43.897
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:36:09.617
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-26 19:36:12.422
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-08-26 19:37:20.423
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:37:51.315
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-26 19:37:53.520
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2018-08-26 19:39:34.180
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-08-26 19:39:34.231
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:39:54.367
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-26 19:39:56.375
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-08-26 19:45:34.358
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:45:42.844
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-26 19:45:45.651
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-08-26 19:47:59.975
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:48:03.019
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-26 19:48:05.024
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-08-26 19:48:37.446
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:49:17.197
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-26 19:49:19.404
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-08-26 19:51:12.423
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 19:51:34.236
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-26 19:51:36.342
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-08-26 21:25:18.832
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 21:25:43.260
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-26 21:25:46.064
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-08-26 21:27:45.339
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-26 21:27:53.777
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-26 21:27:55.779
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-08-30 00:48:46.291
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-08-30 00:48:49.515
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2018-10-14 15:39:26.710
+!MESSAGE Full publish failed for module CDI
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2018-10-14 15:39:26.710
+!MESSAGE Error reading file /home/matheus/.m2/repository/org/infinispan/infinispan-core/4.2.1.FINAL/infinispan-core-4.2.1.FINAL.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-10-14 15:39:27.310
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-10-14 15:39:30.561
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2018-10-14 15:39:32.393
+!MESSAGE Full publish failed for module CDI
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2018-10-14 15:39:32.393
+!MESSAGE Error reading file /home/matheus/.m2/repository/org/infinispan/infinispan-core/4.2.1.FINAL/infinispan-core-4.2.1.FINAL.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2018-10-14 15:39:32.406
+!MESSAGE Module CDI on WildFly 10.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2018-10-14 15:39:52.795
+!MESSAGE Module CDI on WildFly 10.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2018-10-14 15:40:46.996
+!MESSAGE Full publish failed for module CDI
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2018-10-14 15:40:46.996
+!MESSAGE Error reading file /home/matheus/.m2/repository/org/infinispan/infinispan-core/4.2.1.FINAL/infinispan-core-4.2.1.FINAL.jar
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-10-14 15:40:47.162
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2018-10-14 15:40:53.914
+!MESSAGE Full publish failed for module CDI
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2018-10-14 15:40:53.914
+!MESSAGE Error reading file /home/matheus/.m2/repository/org/infinispan/infinispan-core/4.2.1.FINAL/infinispan-core-4.2.1.FINAL.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-10-14 15:40:54.689
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-10-14 15:40:58.094
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2018-10-14 15:40:58.516
+!MESSAGE Full publish failed for module CDI
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2018-10-14 15:40:58.516
+!MESSAGE Error reading file /home/matheus/.m2/repository/org/infinispan/infinispan-core/4.2.1.FINAL/infinispan-core-4.2.1.FINAL.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2018-10-14 15:40:58.518
+!MESSAGE Module CDI on WildFly 10.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2018-10-14 15:41:18.532
+!MESSAGE Module CDI on WildFly 10.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-10-14 15:42:41.771
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2018-10-14 15:43:28.075
+!MESSAGE Full publish failed for module CDI
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2018-10-14 15:43:28.075
+!MESSAGE Error reading file /home/matheus/.m2/repository/org/infinispan/infinispan-core/4.2.1.FINAL/infinispan-core-4.2.1.FINAL.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2018-10-14 15:43:35.820
+!MESSAGE Full publish failed for module CDI
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2018-10-14 15:43:35.820
+!MESSAGE Error reading file /home/matheus/.m2/repository/org/infinispan/infinispan-core/4.2.1.FINAL/infinispan-core-4.2.1.FINAL.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2018-10-14 15:43:36.576
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2018-10-14 15:43:39.581
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2018-10-14 15:44:17.736
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 

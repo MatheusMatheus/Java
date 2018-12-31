@@ -1,0 +1,20 @@
+package rmi.cliente;
+
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+
+import rmi.Teste;
+
+public class Cliente {
+	public static void main(String[] args) {
+		try {
+			Teste teste = (Teste)Naming.lookup("teste");
+			System.out.println(teste.dizMensagem());
+		} catch (MalformedURLException | RemoteException | NotBoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

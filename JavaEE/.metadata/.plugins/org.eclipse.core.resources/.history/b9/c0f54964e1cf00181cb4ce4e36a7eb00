@@ -1,0 +1,13 @@
+package service;
+
+import javax.inject.Inject;
+
+import beans.EigthDigits;
+
+public class LegacyBookService {
+
+	@Inject @EigthDigits
+	private NumberGenerator numberGenerator;
+	
+	
+}

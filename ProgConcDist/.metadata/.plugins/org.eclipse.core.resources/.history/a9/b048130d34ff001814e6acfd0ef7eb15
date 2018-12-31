@@ -1,0 +1,12 @@
+package rmi;
+
+import java.rmi.server.UnicastRemoteObject;
+
+public class TesteRMI extends UnicastRemoteObject implements Teste{
+
+	@Override
+	public String dizMensagem() {
+		return "Hola, que tal";
+	}
+
+}

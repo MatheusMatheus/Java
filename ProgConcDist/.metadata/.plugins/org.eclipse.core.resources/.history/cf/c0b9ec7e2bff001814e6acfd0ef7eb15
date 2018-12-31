@@ -1,0 +1,29 @@
+package udp;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+
+public class Servidor {
+	public static void main(String[] args) {
+		try {
+			byte[] entrada = new byte[1000];
+			
+			DatagramSocket servidor = new DatagramSocket(12345);
+			DatagramPacket pacoteEntrada = new DatagramPacket(entrada, entrada.length);
+			
+			servidor.receive(pacoteEntrada);
+			System.out.println("Mensagem recebida pelo servidor: " + new String(entrada));
+			
+			System.out.println("Enviando mensagem para o cliente...");
+			Thread.sleep(1000);
+			
+			DatagramPacket pacoteSaida = new DatagramPacket(entrada, entrada.length, pacoteEntrada.getAddress(), pacoteEntrada.getPort());
+			servidor.send(pacoteSaida);
+		} catch (IOException | InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

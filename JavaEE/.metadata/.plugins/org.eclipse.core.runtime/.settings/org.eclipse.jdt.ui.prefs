@@ -1,0 +1,23 @@
+content_assist_category_order=org.eclipse.mylyn.java.ui.javaAllProposalCategory\:0\u0000org.eclipse.jdt.ui.templateProposalCategory\:1\u0000org.eclipse.recommenders.calls.rcp.proposalCategory.templates\:2\u0000org.eclipse.jpt.jpa.ui.jpaProposalCategory\:3\u0000org.eclipse.jdt.ui.swtProposalCategory\:4\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\:65540\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\:65541\u0000org.eclipse.jdt.ui.textProposalCategory\:65542\u0000org.eclipse.jpt.jaxb.ui.jaxbCompletionProposals\:8\u0000org.eclipse.jst.ws.jaxws.ui.jaxwsProposalComputer\:9\u0000org.eclipse.pde.api.tools.ui.apitools_proposal_category\:10\u0000org.eclipse.recommenders.chain.rcp.proposalCategory.chain\:11\u0000org.eclipse.recommenders.completion.rcp.proposalCategory.intelligent\:12\u0000org.hibernate.eclipse.jdt.ui.completioncategory\:65548\u0000org.jboss.tools.jst.web.kb.kb_el_proposals\:14\u0000org.jboss.tools.websockets.ui.websocket_proposals\:15\u0000de.ovgu.featureide.ui.ContextViewCompletion\:16\u0000de.ovgu.featureide.ui.AnnoCompletion\:17\u0000org.eclipse.jdt.ui.defaultProposalCategory\:65553\u0000org.eclipse.jdt.ui.javaAllProposalCategory\:65554\u0000
+content_assist_disabled_computers=org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\u0000org.eclipse.recommenders.calls.rcp.proposalCategory.templates\u0000org.eclipse.recommenders.chain.rcp.proposalCategory.chain\u0000org.eclipse.recommenders.completion.rcp.proposalCategory.intelligent\u0000de.ovgu.featureide.ui.ContextViewCompletion\u0000de.ovgu.featureide.ui.AnnoCompletion\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="br.com.modelo.Pessoa"><rhs name\="br.com.modelo.Pessoa"/></lhs><lhs name\="java.lang.Enum"><rhs name\="javax.persistence.GenerationType"/><rhs name\="beans.Digits"/></lhs><lhs name\="br.com.modelo.dao.GenericoDAO"><rhs name\="br.com.modelo.dao.GenericoDAO"/></lhs><lhs name\="br.com.modelo.EntidadeBase"><rhs name\="br.com.modelo.Emprestimo"/><rhs name\="br.com.modelo.Pessoa"/><rhs name\="br.com.modelo.Livro"/></lhs><lhs name\="model.Book"><rhs name\="model.Book"/></lhs><lhs name\="beans.Digits"><rhs name\="beans.Digits"/></lhs></history>
+content_assist_number_of_computers=30
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+fontPropagated=true
+org.eclipse.jdt.internal.ui.navigator.layout=1
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Nimbus Mono L|13.0|1|GTK|1|;
+proposalOrderMigrated=true
+spelling_locale_initialized=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

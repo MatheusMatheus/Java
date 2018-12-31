@@ -1,0 +1,20 @@
+package service;
+
+import javax.inject.Inject;
+
+import beans.Digits;
+import beans.NumberOfDigits;
+import beans.ThirteenDigits;
+import model.Book;
+
+public class BookService {
+
+	@Inject @NumberOfDigits(value = Digits.THIRTEEN, odd = false)
+	private NumberGenerator numberGenerator;
+	
+	public Book createBook(String title, Float price, String description) {
+		Book book = new Book(title, price, description);
+		book.setIsbn(numberGenerator.generateNumber());
+		return book;
+	}
+}
