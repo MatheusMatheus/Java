@@ -22,16 +22,20 @@ public class DAOFuncinario implements DAO<Funcionario> {
 		for(int i = 0; i < 10; i++) {
 			Funcionario funcionario = getFuncionario();
 			funcionario.setSubordinados(populaSubordinados());
-			getLogin(funcionario);
+			funcionario.setLogin(getLogin(funcionario));
 			funcionarios.add(funcionario);
 		}
 		return funcionarios;
 	}
 	
-	private List<Funcionario> populaSubordinados() {
-		List<Funcionario> funcs = new ArrayList<>();
-		this.funcionarios.forEach(f -> funcs.add(getFuncionario()));
-		return funcs;
+	public List<Funcionario> populaSubordinados() {
+		List<Funcionario> funcionarios = new ArrayList<>();
+		for(int i = 0; i < 10; i++) {
+			Funcionario funcionario = getFuncionario();
+			funcionario.setLogin(getLogin(funcionario));
+			funcionarios.add(funcionario);
+		}
+		return funcionarios;
 	}
 	
 	private static HistoricoSalarial getHistorico() {
@@ -65,7 +69,7 @@ public class DAOFuncinario implements DAO<Funcionario> {
 	private static Login getLogin(Funcionario funcionario) {
 		Login login = new Login();
 		login.setFuncionario(funcionario);
-		login.setSenha("65165");
+		login.setSenha(String.valueOf(new Random().nextInt(56565)));
 		login.setUsuario("jlkjlkjljl");
 		return login;
 	}

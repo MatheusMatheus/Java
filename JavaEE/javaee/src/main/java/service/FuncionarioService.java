@@ -20,18 +20,24 @@ import rest.IFuncionario;
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class FuncionarioService implements IFuncionario {
-	
-	private DAO<Funcionario> dao = new DAOFuncinario(); 
+
+	private DAO<Funcionario> dao = new DAOFuncinario();
 
 	@Override
 	@GET
 	@Path("listar")
 	public JsonArray getFuncionarios() {
-		JsonArrayBuilder list = Json.createArrayBuilder();
 		List<Funcionario> funcs = dao.getAll();
-		funcs.stream()
-			 .map(e -> e.toJson())
-			 .forEach(list::add);
+
+		return toJson(funcs);
+	}
+
+	private JsonArray toJson(List<Funcionario> funcs) {
+		JsonArrayBuilder list = Json.createArrayBuilder();
+		funcs
+			.stream()
+			.map(e -> e.toJson())
+			.forEach(list::add);
 		return list.build();
 	}
 

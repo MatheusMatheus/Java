@@ -33,7 +33,7 @@ public class Funcionario {
 	private Login login;
 	
 	
-	@ElementCollection(fetch = FetchType.LAZY)
+	@ElementCollection(fetch = FetchType.EAGER)
 	private List<Funcionario> subordinados;
 	
 	@Transient

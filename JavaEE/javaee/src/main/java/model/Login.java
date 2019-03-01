@@ -1,9 +1,5 @@
 package model;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.persistence.Entity;
@@ -27,14 +23,6 @@ public class Login {
 	public void setFuncionario(Funcionario funcionario) {
 		this.funcionario = funcionario;
 		this.funcionario.setLogin(this);
-	}
-	
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("usuario" + " : " + this.usuario)
-			   .append("senha" + " : " + this.senha);
-		return builder.toString();
 	}
 	
 	public JsonObject toJson() {
