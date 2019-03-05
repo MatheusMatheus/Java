@@ -114,9 +114,9 @@ jboss/server/minimal/tmp/**/*
 jboss/server/minimal/data/**/*
 jboss/server/minimal/work/**/*
 
-wildfly-10.0.0.Final
-wildfly-14.0.0.Final
-
+wildfly-10.0.0.Final/*
+wildfly-14.0.1.Final/*
+jboss-as-7.1.0.Final/*
 
 # deployed package files #
 
