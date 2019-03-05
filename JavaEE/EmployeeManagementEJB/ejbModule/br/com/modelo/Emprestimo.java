@@ -4,8 +4,6 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
@@ -14,7 +12,6 @@ public class Emprestimo implements Serializable, EntidadeBase {
 	/* Serial Version UID */
 	private static final long serialVersionUID = 4621324705834774752L;
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Serializable id;
 	@ManyToOne
 	private Livro livro;

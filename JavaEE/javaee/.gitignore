@@ -126,3 +126,4 @@ jboss/server/minimal/work/**/*
 
 # End of https://www.gitignore.io/api/java,jboss,eclipse
 
+/target/

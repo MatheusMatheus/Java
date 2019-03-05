@@ -2,25 +2,22 @@ package br.com.matheus.modelo;
 
 import java.io.Serializable;
 
-public class Localizacao implements Autenticadora, Serializable {
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Embeddable;
+
+@Embeddable
+@Access(AccessType.FIELD)
+public class Localizacao implements Serializable {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private long id;
+
 	private String cidade;
 	private String estado;
 	private String cep;
 	private String endereco;
-
-	@Override
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
 
 	public String getCidade() {
 		return cidade;

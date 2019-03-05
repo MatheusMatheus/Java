@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Teste
-Bundle-SymbolicName: Teste
+Bundle-SymbolicName: OLX
 Bundle-Version: 1.0.0.qualifier
 Export-Package: br.com.matheus.Teste,
  br.com.matheus.modelo,

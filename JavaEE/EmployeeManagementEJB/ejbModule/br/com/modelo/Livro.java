@@ -13,7 +13,6 @@ public class Livro implements Serializable, EntidadeBase {
 	/* Serial Version UID. */
 	private static final long serialVersionUID = 6775900088322385451L;
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Serializable id;
 	private String titulo;
 	private String autor;

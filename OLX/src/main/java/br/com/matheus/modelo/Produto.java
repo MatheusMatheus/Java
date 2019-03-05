@@ -3,6 +3,8 @@ package br.com.matheus.modelo;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+import javax.persistence.OneToOne;
+
 /**
  * Hello world!
  *
@@ -16,6 +18,9 @@ public class Produto implements Autenticadora, Serializable {
 	private String descricao;
 	private String nome;
 	private BigDecimal valor;
+	
+	@OneToOne
+	private Categoria categoria;
 
 	@Override
 	public long getId() {
@@ -48,6 +53,14 @@ public class Produto implements Autenticadora, Serializable {
 
 	public void setValor(BigDecimal valor) {
 		this.valor = valor;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 
 }

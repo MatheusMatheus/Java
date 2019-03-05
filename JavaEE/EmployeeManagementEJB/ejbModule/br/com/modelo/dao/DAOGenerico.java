@@ -1,11 +1,14 @@
 package br.com.modelo.dao;
 
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
 import br.com.modelo.EntidadeBase;
 
 public class DAOGenerico<T extends EntidadeBase> implements DAO<T> {
+	
+	@Inject
 	private EntityManager entityManager;
 	private final Class<T> classe;
 

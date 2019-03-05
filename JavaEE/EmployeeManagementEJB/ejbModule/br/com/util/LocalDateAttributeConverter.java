@@ -1,4 +1,4 @@
-package util;
+package br.com.util;
 
 import java.sql.Date;
 import java.time.LocalDate;

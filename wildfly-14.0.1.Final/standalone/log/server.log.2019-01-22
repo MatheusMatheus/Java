@@ -1,0 +1,1735 @@
+2019-01-22 21:06:01,558 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 21:06:02,894 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 21:06:02,904 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 21:06:03,526 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 21:06:03,527 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 21:06:03,528 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-01-22 21:06:05,647 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 21:06:06,839 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:06:06,862 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 21) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:06:06,971 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found SISPRO-0.0.1-SNAPSHOT.war in deployment directory. To trigger deployment create a file called SISPRO-0.0.1-SNAPSHOT.war.dodeploy
+2019-01-22 21:06:07,014 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-01-22 21:06:07,037 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.6.5.Final
+2019-01-22 21:06:07,045 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.6.5.Final
+2019-01-22 21:06:07,110 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-01-22 21:06:07,133 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 59) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-01-22 21:06:07,138 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 57) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-01-22 21:06:07,142 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-01-22 21:06:07,147 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-01-22 21:06:07,157 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2019-01-22 21:06:07,164 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2019-01-22 21:06:07,165 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 58) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-01-22 21:06:07,165 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2019-01-22 21:06:07,183 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:06:07,204 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-01-22 21:06:07,212 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.6.1.Final
+2019-01-22 21:06:07,226 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 55) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-01-22 21:06:07,229 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-01-22 21:06:07,242 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-01-22 21:06:07,263 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-01-22 21:06:07,277 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.8.Final
+2019-01-22 21:06:07,279 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.0.13.Final starting
+2019-01-22 21:06:07,326 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2019-01-22 21:06:07,328 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-01-22 21:06:07,356 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:06:07,496 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-01-22 21:06:07,496 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-01-22 21:06:07,579 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-01-22 21:06:07,634 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2019-01-22 21:06:07,636 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2019-01-22 21:06:07,866 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-01-22 21:06:07,879 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:06:08,508 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:06:08,967 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-01-22 21:06:08,989 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-01-22 21:06:09,004 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/deployments
+2019-01-22 21:06:09,022 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name: "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:06:09,107 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-01-22 21:06:09,200 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2019-01-22 21:06:10,070 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2019-01-22 21:06:10,556 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-01-22 21:06:10,954 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 72) WFLYUT0021: Registered web context: '/SISPRO-0.0.1-SNAPSHOT' for server 'default-server'
+2019-01-22 21:06:11,022 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name : "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:06:11,186 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-01-22 21:06:11,192 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-01-22 21:06:11,192 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-01-22 21:06:11,192 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started in 10286ms - Started 405 of 590 services (326 services are lazy, passive or on-demand)
+2019-01-22 21:06:25,714 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0236: Suspending server with no timeout.
+2019-01-22 21:06:25,717 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:06:25,719 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2019-01-22 21:06:25,750 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:06:25,752 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 18) WFLYUT0022: Unregistered web context: '/SISPRO-0.0.1-SNAPSHOT' from server 'default-server'
+2019-01-22 21:06:25,761 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:06:25,763 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-01-22 21:06:25,773 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 18) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2019-01-22 21:06:25,777 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2019-01-22 21:06:25,799 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-01-22 21:06:25,799 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment SISPRO-0.0.1-SNAPSHOT.war (runtime-name: SISPRO-0.0.1-SNAPSHOT.war) in 77ms
+2019-01-22 21:06:25,800 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2019-01-22 21:06:25,800 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2019-01-22 21:06:25,801 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2019-01-22 21:06:25,803 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 2.0.13.Final stopping
+2019-01-22 21:06:25,813 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) stopped in 88ms
+2019-01-22 21:06:48,840 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 21:06:49,304 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 21:06:49,314 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 21:06:49,449 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 21:06:49,450 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 21:06:49,451 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-01-22 21:06:50,288 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 21:06:50,835 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:06:50,861 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 33) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:06:50,874 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found SISPRO-0.0.1-SNAPSHOT.war in deployment directory. To trigger deployment create a file called SISPRO-0.0.1-SNAPSHOT.war.dodeploy
+2019-01-22 21:06:50,916 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-01-22 21:06:50,934 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.6.5.Final
+2019-01-22 21:06:50,940 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.6.5.Final
+2019-01-22 21:06:50,961 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-01-22 21:06:50,977 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2019-01-22 21:06:50,978 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-01-22 21:06:50,986 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 59) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-01-22 21:06:50,990 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-01-22 21:06:50,992 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 57) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-01-22 21:06:50,997 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 58) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-01-22 21:06:50,997 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2019-01-22 21:06:51,004 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 55) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-01-22 21:06:51,008 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.6.1.Final
+2019-01-22 21:06:51,010 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2019-01-22 21:06:51,015 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-01-22 21:06:51,027 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-01-22 21:06:51,040 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:06:51,048 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-01-22 21:06:51,069 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-01-22 21:06:51,082 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.0.13.Final starting
+2019-01-22 21:06:51,096 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2019-01-22 21:06:51,097 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-01-22 21:06:51,103 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.8.Final
+2019-01-22 21:06:51,130 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:06:51,234 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-01-22 21:06:51,241 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-01-22 21:06:51,242 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-01-22 21:06:51,252 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2019-01-22 21:06:51,253 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2019-01-22 21:06:51,322 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-01-22 21:06:51,328 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:06:51,416 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:06:52,243 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-01-22 21:06:52,252 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-01-22 21:06:52,256 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/deployments
+2019-01-22 21:06:52,264 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name: "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:06:52,328 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-01-22 21:06:52,412 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2019-01-22 21:06:54,176 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2019-01-22 21:06:54,325 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-01-22 21:06:54,442 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0021: Registered web context: '/SISPRO-0.0.1-SNAPSHOT' for server 'default-server'
+2019-01-22 21:06:54,452 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name : "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:06:54,509 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-01-22 21:06:54,511 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-01-22 21:06:54,512 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-01-22 21:06:54,512 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started in 6183ms - Started 405 of 590 services (326 services are lazy, passive or on-demand)
+2019-01-22 21:08:58,649 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0236: Suspending server with no timeout.
+2019-01-22 21:08:58,654 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:08:58,675 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2019-01-22 21:08:58,691 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:08:58,711 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0022: Unregistered web context: '/SISPRO-0.0.1-SNAPSHOT' from server 'default-server'
+2019-01-22 21:08:58,718 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:08:58,722 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-01-22 21:08:58,732 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 18) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2019-01-22 21:08:58,740 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+2019-01-22 21:08:58,763 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2019-01-22 21:08:58,763 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-01-22 21:08:58,763 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment SISPRO-0.0.1-SNAPSHOT.war (runtime-name: SISPRO-0.0.1-SNAPSHOT.war) in 83ms
+2019-01-22 21:08:58,763 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2019-01-22 21:08:58,764 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2019-01-22 21:08:58,766 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.0.13.Final stopping
+2019-01-22 21:08:58,773 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) stopped in 93ms
+2019-01-22 21:09:16,785 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 21:09:17,307 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 21:09:17,318 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 21:09:17,511 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 21:09:17,512 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 21:09:17,513 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-01-22 21:09:18,352 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 21:09:18,946 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:09:18,977 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 23) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:09:18,982 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found SISPRO-0.0.1-SNAPSHOT.war in deployment directory. To trigger deployment create a file called SISPRO-0.0.1-SNAPSHOT.war.dodeploy
+2019-01-22 21:09:19,046 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-01-22 21:09:19,064 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.6.5.Final
+2019-01-22 21:09:19,072 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.6.5.Final
+2019-01-22 21:09:19,122 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-01-22 21:09:19,144 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 57) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-01-22 21:09:19,153 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-01-22 21:09:19,155 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2019-01-22 21:09:19,155 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2019-01-22 21:09:19,157 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-01-22 21:09:19,158 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 59) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-01-22 21:09:19,162 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-01-22 21:09:19,171 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-01-22 21:09:19,173 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.6.1.Final
+2019-01-22 21:09:19,175 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 58) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-01-22 21:09:19,177 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-01-22 21:09:19,179 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2019-01-22 21:09:19,193 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-01-22 21:09:19,195 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:09:19,215 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 55) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-01-22 21:09:19,226 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.0.13.Final starting
+2019-01-22 21:09:19,232 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2019-01-22 21:09:19,239 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-01-22 21:09:19,255 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:09:19,255 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.8.Final
+2019-01-22 21:09:19,364 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-01-22 21:09:19,366 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-01-22 21:09:19,399 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-01-22 21:09:19,418 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2019-01-22 21:09:19,420 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2019-01-22 21:09:19,484 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-01-22 21:09:19,505 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:09:19,796 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:09:20,012 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-01-22 21:09:20,023 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-01-22 21:09:20,027 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/deployments
+2019-01-22 21:09:20,035 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name: "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:09:20,096 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-01-22 21:09:20,511 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2019-01-22 21:09:21,254 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2019-01-22 21:09:21,714 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-01-22 21:09:21,818 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 72) WFLYUT0021: Registered web context: '/SISPRO-0.0.1-SNAPSHOT' for server 'default-server'
+2019-01-22 21:09:21,828 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name : "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:09:21,872 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-01-22 21:09:21,874 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-01-22 21:09:21,874 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-01-22 21:09:21,874 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started in 5619ms - Started 405 of 590 services (326 services are lazy, passive or on-demand)
+2019-01-22 21:11:39,343 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0236: Suspending server with no timeout.
+2019-01-22 21:11:39,346 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:11:39,347 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2019-01-22 21:11:39,360 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:11:39,362 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 72) WFLYUT0022: Unregistered web context: '/SISPRO-0.0.1-SNAPSHOT' from server 'default-server'
+2019-01-22 21:11:39,368 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:11:39,370 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-01-22 21:11:39,380 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2019-01-22 21:11:39,385 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2019-01-22 21:11:39,407 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2019-01-22 21:11:39,407 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-01-22 21:11:39,408 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment SISPRO-0.0.1-SNAPSHOT.war (runtime-name: SISPRO-0.0.1-SNAPSHOT.war) in 56ms
+2019-01-22 21:11:39,408 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2019-01-22 21:11:39,408 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2019-01-22 21:11:39,409 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 2.0.13.Final stopping
+2019-01-22 21:11:39,419 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) stopped in 67ms
+2019-01-22 21:11:43,255 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 21:11:43,689 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 21:11:43,698 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 21:11:43,829 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 21:11:43,830 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 21:11:43,830 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:45783 -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-01-22 21:11:44,569 INFO  [org.wildfly.security] (ServerService Thread Pool -- 8) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 21:11:45,153 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:11:45,179 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 22) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:11:45,206 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found SISPRO-0.0.1-SNAPSHOT.war in deployment directory. To trigger deployment create a file called SISPRO-0.0.1-SNAPSHOT.war.dodeploy
+2019-01-22 21:11:45,262 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-01-22 21:11:45,288 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.6.5.Final
+2019-01-22 21:11:45,299 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.6.5.Final
+2019-01-22 21:11:45,363 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-01-22 21:11:45,394 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-01-22 21:11:45,395 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-01-22 21:11:45,422 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.8.Final
+2019-01-22 21:11:45,433 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.6.1.Final
+2019-01-22 21:11:45,450 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 55) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-01-22 21:11:45,451 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 59) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-01-22 21:11:45,456 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 57) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-01-22 21:11:45,474 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2019-01-22 21:11:45,459 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-01-22 21:11:45,472 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 58) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-01-22 21:11:45,488 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:11:45,492 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-01-22 21:11:45,500 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-01-22 21:11:45,507 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2019-01-22 21:11:45,509 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:11:45,516 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-01-22 21:11:45,546 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2019-01-22 21:11:45,546 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-01-22 21:11:45,547 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2019-01-22 21:11:45,624 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.0.13.Final starting
+2019-01-22 21:11:45,652 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-01-22 21:11:45,654 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-01-22 21:11:45,763 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-01-22 21:11:45,782 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2019-01-22 21:11:45,791 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2019-01-22 21:11:45,876 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-01-22 21:11:45,953 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:11:46,272 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:11:46,312 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-01-22 21:11:46,323 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-01-22 21:11:46,327 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/deployments
+2019-01-22 21:11:46,335 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name: "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:11:46,403 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-01-22 21:11:46,466 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2019-01-22 21:11:47,228 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2019-01-22 21:11:47,419 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-01-22 21:11:47,547 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0021: Registered web context: '/SISPRO-0.0.1-SNAPSHOT' for server 'default-server'
+2019-01-22 21:11:47,561 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name : "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:11:47,611 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-01-22 21:11:47,613 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-01-22 21:11:47,614 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-01-22 21:11:47,614 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started in 4855ms - Started 405 of 590 services (326 services are lazy, passive or on-demand)
+2019-01-22 21:15:15,486 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 21:15:15,996 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 21:15:16,007 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 21:15:16,169 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 21:15:16,170 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 21:15:16,170 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:33275 -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-01-22 21:15:17,084 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 21:15:17,702 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:15:17,741 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 31) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:15:17,766 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found SISPRO-0.0.1-SNAPSHOT.war in deployment directory. To trigger deployment create a file called SISPRO-0.0.1-SNAPSHOT.war.dodeploy
+2019-01-22 21:15:17,814 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-01-22 21:15:17,835 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.6.5.Final
+2019-01-22 21:15:17,844 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.6.5.Final
+2019-01-22 21:15:17,914 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-01-22 21:15:17,923 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-01-22 21:15:17,930 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-01-22 21:15:17,963 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.6.1.Final
+2019-01-22 21:15:17,974 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 57) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-01-22 21:15:17,987 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 59) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-01-22 21:15:17,996 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2019-01-22 21:15:17,998 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:15:18,001 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:15:18,005 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 58) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-01-22 21:15:18,010 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-01-22 21:15:18,012 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-01-22 21:15:18,035 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-01-22 21:15:18,043 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 55) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-01-22 21:15:18,046 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2019-01-22 21:15:18,053 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-01-22 21:15:18,072 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2019-01-22 21:15:18,078 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.8.Final
+2019-01-22 21:15:18,102 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2019-01-22 21:15:18,112 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.0.13.Final starting
+2019-01-22 21:15:18,117 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-01-22 21:15:18,213 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-01-22 21:15:18,213 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-01-22 21:15:18,295 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-01-22 21:15:18,313 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2019-01-22 21:15:18,315 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2019-01-22 21:15:18,421 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-01-22 21:15:18,446 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:15:18,713 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:15:18,849 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-01-22 21:15:18,865 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-01-22 21:15:18,870 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/deployments
+2019-01-22 21:15:18,879 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name: "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:15:18,957 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-01-22 21:15:19,032 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2019-01-22 21:15:19,752 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2019-01-22 21:15:19,980 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-01-22 21:15:20,119 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0021: Registered web context: '/SISPRO-0.0.1-SNAPSHOT' for server 'default-server'
+2019-01-22 21:15:20,131 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name : "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:15:20,178 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-01-22 21:15:20,180 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-01-22 21:15:20,180 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-01-22 21:15:20,180 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started in 5220ms - Started 405 of 590 services (326 services are lazy, passive or on-demand)
+2019-01-22 21:20:19,369 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 21:20:19,942 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 21:20:19,956 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 21:20:20,156 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 21:20:20,158 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 21:20:20,159 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:39347 -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-01-22 21:20:21,085 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 21:20:21,689 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:20:21,720 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 32) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:20:21,735 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found SISPRO-0.0.1-SNAPSHOT.war in deployment directory. To trigger deployment create a file called SISPRO-0.0.1-SNAPSHOT.war.dodeploy
+2019-01-22 21:20:21,785 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-01-22 21:20:21,806 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.6.5.Final
+2019-01-22 21:20:21,818 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.6.5.Final
+2019-01-22 21:20:21,889 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-01-22 21:20:21,889 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-01-22 21:20:21,943 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.8.Final
+2019-01-22 21:20:21,968 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-01-22 21:20:21,971 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 57) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-01-22 21:20:21,977 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 59) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-01-22 21:20:21,978 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.6.1.Final
+2019-01-22 21:20:21,985 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-01-22 21:20:21,986 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2019-01-22 21:20:21,987 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 55) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-01-22 21:20:21,989 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 58) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-01-22 21:20:22,009 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-01-22 21:20:22,022 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:20:22,033 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2019-01-22 21:20:22,043 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-01-22 21:20:22,071 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-01-22 21:20:22,071 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2019-01-22 21:20:22,096 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-01-22 21:20:22,129 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2019-01-22 21:20:22,151 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:20:22,640 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.0.13.Final starting
+2019-01-22 21:20:22,681 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-01-22 21:20:22,682 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-01-22 21:20:23,265 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-01-22 21:20:23,283 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2019-01-22 21:20:23,287 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2019-01-22 21:20:23,360 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-01-22 21:20:23,411 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:20:24,503 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:20:24,881 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-01-22 21:20:24,894 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-01-22 21:20:24,899 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/deployments
+2019-01-22 21:20:24,906 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name: "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:20:24,973 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-01-22 21:20:25,051 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2019-01-22 21:20:26,171 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2019-01-22 21:20:26,355 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-01-22 21:20:26,517 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 72) WFLYUT0021: Registered web context: '/SISPRO-0.0.1-SNAPSHOT' for server 'default-server'
+2019-01-22 21:20:26,533 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name : "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:20:26,624 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-01-22 21:20:26,626 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-01-22 21:20:26,627 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-01-22 21:20:26,627 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started in 8190ms - Started 405 of 590 services (326 services are lazy, passive or on-demand)
+2019-01-22 21:25:33,122 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 21:25:33,547 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 21:25:33,557 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 21:25:33,694 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 21:25:33,695 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 21:25:33,696 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:33233 -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-01-22 21:25:34,578 INFO  [org.wildfly.security] (ServerService Thread Pool -- 25) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 21:25:35,369 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:25:35,401 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 23) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:25:35,422 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found SISPRO-0.0.1-SNAPSHOT.war in deployment directory. To trigger deployment create a file called SISPRO-0.0.1-SNAPSHOT.war.dodeploy
+2019-01-22 21:25:35,481 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-01-22 21:25:35,501 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.6.5.Final
+2019-01-22 21:25:35,512 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.6.5.Final
+2019-01-22 21:25:35,566 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-01-22 21:25:35,576 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-01-22 21:25:35,579 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-01-22 21:25:35,640 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.6.1.Final
+2019-01-22 21:25:35,655 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 57) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-01-22 21:25:35,670 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-01-22 21:25:35,676 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:25:35,680 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-01-22 21:25:35,682 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 59) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-01-22 21:25:35,684 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2019-01-22 21:25:35,691 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 55) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-01-22 21:25:35,701 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-01-22 21:25:35,709 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.8.Final
+2019-01-22 21:25:35,710 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2019-01-22 21:25:35,715 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2019-01-22 21:25:35,723 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 58) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-01-22 21:25:35,749 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-01-22 21:25:35,800 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2019-01-22 21:25:35,801 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-01-22 21:25:35,814 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:25:35,848 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.0.13.Final starting
+2019-01-22 21:25:35,971 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-01-22 21:25:35,972 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-01-22 21:25:36,051 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-01-22 21:25:36,068 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2019-01-22 21:25:36,085 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
+2019-01-22 21:25:36,155 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-01-22 21:25:36,224 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:25:36,532 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:25:36,553 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-01-22 21:25:36,565 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-01-22 21:25:36,571 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/deployments
+2019-01-22 21:25:36,578 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name: "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:25:36,638 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-01-22 21:25:36,701 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2019-01-22 21:25:37,309 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2019-01-22 21:25:37,461 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-01-22 21:25:37,578 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0021: Registered web context: '/SISPRO-0.0.1-SNAPSHOT' for server 'default-server'
+2019-01-22 21:25:37,589 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name : "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:25:37,639 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-01-22 21:25:37,641 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-01-22 21:25:37,641 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-01-22 21:25:37,641 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started in 5024ms - Started 405 of 590 services (326 services are lazy, passive or on-demand)
+2019-01-22 21:26:42,432 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0236: Suspending server with no timeout.
+2019-01-22 21:26:42,435 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:26:42,439 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2019-01-22 21:26:42,458 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:26:42,459 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0022: Unregistered web context: '/SISPRO-0.0.1-SNAPSHOT' from server 'default-server'
+2019-01-22 21:26:42,467 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:26:42,469 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-01-22 21:26:42,485 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+2019-01-22 21:26:42,489 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 73) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2019-01-22 21:26:42,534 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-01-22 21:26:42,534 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2019-01-22 21:26:42,535 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment SISPRO-0.0.1-SNAPSHOT.war (runtime-name: SISPRO-0.0.1-SNAPSHOT.war) in 87ms
+2019-01-22 21:26:42,535 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2019-01-22 21:26:42,535 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2019-01-22 21:26:42,536 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.0.13.Final stopping
+2019-01-22 21:26:42,541 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) stopped in 90ms
+2019-01-22 21:27:09,447 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 21:27:09,859 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 21:27:09,868 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 21:27:09,994 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 21:27:09,995 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 21:27:09,996 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:41911 -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-01-22 21:27:10,713 INFO  [org.wildfly.security] (ServerService Thread Pool -- 25) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 21:27:11,309 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:27:11,341 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 16) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:27:11,368 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found SISPRO-0.0.1-SNAPSHOT.war in deployment directory. To trigger deployment create a file called SISPRO-0.0.1-SNAPSHOT.war.dodeploy
+2019-01-22 21:27:11,426 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-01-22 21:27:11,444 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.6.5.Final
+2019-01-22 21:27:11,452 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.6.5.Final
+2019-01-22 21:27:11,490 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-01-22 21:27:11,517 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-01-22 21:27:11,535 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-01-22 21:27:11,538 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2019-01-22 21:27:11,533 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 59) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-01-22 21:27:11,544 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.6.1.Final
+2019-01-22 21:27:11,548 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 57) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-01-22 21:27:11,558 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:27:11,568 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-01-22 21:27:11,569 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2019-01-22 21:27:11,566 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 58) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-01-22 21:27:11,564 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 55) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-01-22 21:27:11,591 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-01-22 21:27:11,603 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2019-01-22 21:27:11,615 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-01-22 21:27:11,621 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.8.Final
+2019-01-22 21:27:11,630 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.0.13.Final starting
+2019-01-22 21:27:11,636 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-01-22 21:27:11,636 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2019-01-22 21:27:11,650 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-01-22 21:27:11,720 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:27:11,799 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-01-22 21:27:11,799 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-01-22 21:27:11,881 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-01-22 21:27:11,892 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2019-01-22 21:27:11,899 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2019-01-22 21:27:12,029 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-01-22 21:27:12,066 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:27:12,359 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-01-22 21:27:12,364 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:27:12,378 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-01-22 21:27:12,384 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/deployments
+2019-01-22 21:27:12,393 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name: "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:27:12,457 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-01-22 21:27:12,510 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2019-01-22 21:27:13,162 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2019-01-22 21:27:13,315 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-01-22 21:27:13,430 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0021: Registered web context: '/SISPRO-0.0.1-SNAPSHOT' for server 'default-server'
+2019-01-22 21:27:13,444 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name : "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:27:13,493 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-01-22 21:27:13,495 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-01-22 21:27:13,495 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-01-22 21:27:13,495 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started in 4422ms - Started 405 of 590 services (326 services are lazy, passive or on-demand)
+2019-01-22 21:31:06,597 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 21:31:06,925 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 21:31:06,933 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 21:31:07,041 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 21:31:07,042 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 21:31:07,043 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-01-22 21:31:07,704 INFO  [org.wildfly.security] (ServerService Thread Pool -- 25) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 21:31:08,150 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:31:08,175 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 8) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:31:08,253 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 9) WFLYDR0001: Content added at location /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content/4d/6e0bea410b35cc4a4fb1a36af87bda7f2bcb16/content
+2019-01-22 21:31:08,267 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 9) WFLYDR0001: Content added at location /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content/7a/48a60d76d467f5ca10e5670b04544f59e050cc/content
+2019-01-22 21:31:08,280 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-01-22 21:31:08,295 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.6.5.Final
+2019-01-22 21:31:08,300 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.6.5.Final
+2019-01-22 21:31:08,343 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-01-22 21:31:08,345 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-01-22 21:31:08,356 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.8.Final
+2019-01-22 21:31:08,368 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-01-22 21:31:08,380 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.6.1.Final
+2019-01-22 21:31:08,384 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 59) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-01-22 21:31:08,385 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-01-22 21:31:08,392 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2019-01-22 21:31:08,401 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 57) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-01-22 21:31:08,403 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2019-01-22 21:31:08,404 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2019-01-22 21:31:08,408 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 58) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-01-22 21:31:08,412 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 55) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-01-22 21:31:08,414 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-01-22 21:31:08,429 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-01-22 21:31:08,431 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-01-22 21:31:08,438 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:31:08,438 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:31:08,464 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.0.13.Final starting
+2019-01-22 21:31:08,472 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2019-01-22 21:31:08,473 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-01-22 21:31:08,612 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-01-22 21:31:08,612 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-01-22 21:31:08,650 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-01-22 21:31:08,674 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2019-01-22 21:31:08,676 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2019-01-22 21:31:08,738 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-01-22 21:31:08,795 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:31:08,976 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-01-22 21:31:08,992 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-01-22 21:31:08,998 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/deployments
+2019-01-22 21:31:09,009 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name: "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:31:09,009 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "maven-metadata-local.xml" (runtime-name: "maven-metadata-local.xml")
+2019-01-22 21:31:09,015 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:31:09,058 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-01-22 21:31:09,115 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2019-01-22 21:31:09,408 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-2) WFLYRS0015: No Servlet declaration found for JAX-RS application.  In SISPRO-0.0.1-SNAPSHOT.war either provide a class that extends javax.ws.rs.core.Application or declare a servlet class in web.xml.
+2019-01-22 21:31:09,606 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2019-01-22 21:31:09,769 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-01-22 21:31:09,857 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 72) WFLYUT0021: Registered web context: '/SISPRO-0.0.1-SNAPSHOT' for server 'default-server'
+2019-01-22 21:31:09,867 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name : "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:31:09,867 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "maven-metadata-local.xml" (runtime-name : "maven-metadata-local.xml")
+2019-01-22 21:31:09,911 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-01-22 21:31:09,913 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-01-22 21:31:09,913 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-01-22 21:31:09,914 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started in 3649ms - Started 443 of 629 services (329 services are lazy, passive or on-demand)
+2019-01-22 21:31:16,628 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0236: Suspending server with no timeout.
+2019-01-22 21:31:16,630 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:31:16,635 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2019-01-22 21:31:16,654 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 9) WFLYUT0022: Unregistered web context: '/SISPRO-0.0.1-SNAPSHOT' from server 'default-server'
+2019-01-22 21:31:16,654 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:31:16,662 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:31:16,664 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-01-22 21:31:16,664 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2019-01-22 21:31:16,680 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2019-01-22 21:31:16,681 ERROR [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0043: Deployment unit processor org.wildfly.extension.microprofile.config.smallrye.deployment.SubsystemDeploymentProcessor@412c7f19 unexpectedly threw an exception during undeploy phase POST_MODULE of deployment "maven-metadata-local.xml": java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.remove(HashMap.java:1451)
+	at io.smallrye.config.SmallRyeConfigProviderResolver.releaseConfig(SmallRyeConfigProviderResolver.java:73)
+	at org.wildfly.extension.microprofile.config.smallrye.deployment.SubsystemDeploymentProcessor.undeploy(SubsystemDeploymentProcessor.java:102)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.safeUndeploy(DeploymentUnitPhaseService.java:211)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.stop(DeploymentUnitPhaseService.java:204)
+	at org.jboss.msc.service.ServiceControllerImpl$StopTask.stopService(ServiceControllerImpl.java:1792)
+	at org.jboss.msc.service.ServiceControllerImpl$StopTask.execute(ServiceControllerImpl.java:1761)
+	at org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1556)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-01-22 21:31:16,684 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment maven-metadata-local.xml (runtime-name: maven-metadata-local.xml) in 42ms
+2019-01-22 21:31:16,685 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2019-01-22 21:31:16,685 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment SISPRO-0.0.1-SNAPSHOT.war (runtime-name: SISPRO-0.0.1-SNAPSHOT.war) in 44ms
+2019-01-22 21:31:16,686 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2019-01-22 21:31:16,686 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-01-22 21:31:16,686 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2019-01-22 21:31:16,687 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 2.0.13.Final stopping
+2019-01-22 21:31:16,699 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) stopped in 56ms
+2019-01-22 21:31:30,084 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 21:31:30,419 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 21:31:30,428 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 21:31:30,545 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 21:31:30,546 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 21:31:30,547 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:36883 -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-01-22 21:31:31,316 INFO  [org.wildfly.security] (ServerService Thread Pool -- 24) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 21:31:31,956 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:31:32,003 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 27) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:31:32,098 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 26) WFLYDR0001: Content added at location /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content/48/f1f5735130dfb7469de2e11fa860899eb53874/content
+2019-01-22 21:31:32,120 ERROR [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 26) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "maven-metadata-local.xml")]) - failure description: "WFLYCTL0212: Duplicate resource [(\"deployment\" => \"maven-metadata-local.xml\")]"
+2019-01-22 21:31:32,122 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) "WFLYCTL0193: Failed executing subsystem deployment-scanner boot operations"
+2019-01-22 21:31:32,124 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("parallel-subsystem-boot") failed - address: ([]) - failure description: "\"WFLYCTL0193: Failed executing subsystem deployment-scanner boot operations\""
+2019-01-22 21:31:32,129 FATAL [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0056: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2019-01-22 21:31:32,159 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) stopped in 15ms
+2019-01-22 21:32:37,988 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 21:32:38,315 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 21:32:38,325 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 21:32:38,437 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 21:32:38,438 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 21:32:38,438 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-01-22 21:32:39,116 INFO  [org.wildfly.security] (ServerService Thread Pool -- 24) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 21:32:39,645 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:32:39,669 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 29) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 21:32:39,686 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment SISPRO-0.0.1-SNAPSHOT.war
+2019-01-22 21:32:39,688 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment maven-metadata-local.xml
+2019-01-22 21:32:39,734 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-01-22 21:32:39,752 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.6.5.Final
+2019-01-22 21:32:39,761 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.6.5.Final
+2019-01-22 21:32:39,835 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-01-22 21:32:39,837 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.6.1.Final
+2019-01-22 21:32:39,839 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-01-22 21:32:39,842 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-01-22 21:32:39,859 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 55) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-01-22 21:32:39,863 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 57) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-01-22 21:32:39,864 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 59) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-01-22 21:32:39,868 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2019-01-22 21:32:39,870 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:32:39,880 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-01-22 21:32:39,898 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-01-22 21:32:39,902 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 58) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-01-22 21:32:39,904 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2019-01-22 21:32:39,911 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2019-01-22 21:32:39,916 INFO  [org.jboss.as.security] (MSC service thread 1-6) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-01-22 21:32:39,917 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.8.Final
+2019-01-22 21:32:39,922 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-01-22 21:32:39,973 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.0.13.Final starting
+2019-01-22 21:32:39,975 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2019-01-22 21:32:39,976 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-01-22 21:32:39,998 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:32:40,075 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-01-22 21:32:40,076 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-01-22 21:32:40,177 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-01-22 21:32:40,197 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2019-01-22 21:32:40,203 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2019-01-22 21:32:40,246 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-01-22 21:32:40,305 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:32:40,565 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:32:40,580 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-01-22 21:32:40,598 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-01-22 21:32:40,605 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/deployments
+2019-01-22 21:32:40,618 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name: "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:32:40,620 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "maven-metadata-local.xml" (runtime-name: "maven-metadata-local.xml")
+2019-01-22 21:32:40,682 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-01-22 21:32:40,755 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2019-01-22 21:32:41,122 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-8) WFLYRS0015: No Servlet declaration found for JAX-RS application.  In SISPRO-0.0.1-SNAPSHOT.war either provide a class that extends javax.ws.rs.core.Application or declare a servlet class in web.xml.
+2019-01-22 21:32:41,335 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2019-01-22 21:32:41,496 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-01-22 21:32:41,592 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0021: Registered web context: '/SISPRO-0.0.1-SNAPSHOT' for server 'default-server'
+2019-01-22 21:32:41,605 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "maven-metadata-local.xml" (runtime-name : "maven-metadata-local.xml")
+2019-01-22 21:32:41,605 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name : "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 21:32:41,643 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-01-22 21:32:41,644 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-01-22 21:32:41,644 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-01-22 21:32:41,645 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started in 3957ms - Started 443 of 629 services (329 services are lazy, passive or on-demand)
+2019-01-22 21:35:42,877 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0236: Suspending server with no timeout.
+2019-01-22 21:35:42,879 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 21:35:42,881 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2019-01-22 21:35:42,901 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 27) WFLYUT0022: Unregistered web context: '/SISPRO-0.0.1-SNAPSHOT' from server 'default-server'
+2019-01-22 21:35:42,902 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 21:35:42,910 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2019-01-22 21:35:42,915 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 21:35:42,924 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-01-22 21:35:42,927 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 27) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2019-01-22 21:35:42,933 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment maven-metadata-local.xml (runtime-name: maven-metadata-local.xml) in 43ms
+2019-01-22 21:35:42,933 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-01-22 21:35:42,934 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2019-01-22 21:35:42,935 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2019-01-22 21:35:42,936 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment SISPRO-0.0.1-SNAPSHOT.war (runtime-name: SISPRO-0.0.1-SNAPSHOT.war) in 47ms
+2019-01-22 21:35:42,936 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2019-01-22 21:35:42,936 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.0.13.Final stopping
+2019-01-22 21:35:42,940 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) stopped in 50ms
+2019-01-22 22:47:09,642 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-01-22 22:47:10,086 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-01-22 22:47:10,097 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-01-22 22:47:10,257 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) starting
+2019-01-22 22:47:10,259 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/endorsed
+	java.ext.dirs = /usr/local/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/local/java/jdk1.8.0_131/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.bind.address.management = 0.0.0.0
+	jboss.home.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final
+	jboss.host.name = matheus-pc
+	jboss.modules.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = matheus-pc
+	jboss.qualified.host.name = matheus-pc
+	jboss.server.base.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	jboss.server.config.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log
+	jboss.server.name = matheus-pc
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties
+	module.path = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules
+	org.jboss.boot.log.file = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.15.0-43-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 14
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/local/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_131/jre/classes
+	sun.boot.library.path = /usr/local/java/jdk1.8.0_131/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/modules org.jboss.as.standalone -b 0.0.0.0 --server-config=standalone.xml -Djboss.server.base.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/bin
+	user.home = /home/matheus
+	user.language = pt
+	user.name = matheus
+	user.timezone = America/Sao_Paulo
+2019-01-22 22:47:10,260 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:39431 -Dprogram.name=JBossTools: WildFly 14 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=0.0.0.0 -Dfile.encoding=UTF-8 
+2019-01-22 22:47:11,150 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-01-22 22:47:11,868 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 22:47:11,898 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 33) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-01-22 22:47:11,920 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found SISPRO-0.0.1-SNAPSHOT.war in deployment directory. To trigger deployment create a file called SISPRO-0.0.1-SNAPSHOT.war.dodeploy
+2019-01-22 22:47:11,937 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 18) WFLYDR0001: Content added at location /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/data/content/99/1294fa9993594cf8ac2d1a23f8e38b2a48debb/content
+2019-01-22 22:47:11,975 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-01-22 22:47:11,997 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.6.5.Final
+2019-01-22 22:47:12,012 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.6.5.Final
+2019-01-22 22:47:12,105 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-01-22 22:47:12,153 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-01-22 22:47:12,160 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-01-22 22:47:12,192 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.6.1.Final
+2019-01-22 22:47:12,199 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 59) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-01-22 22:47:12,205 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 57) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-01-22 22:47:12,213 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 58) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-01-22 22:47:12,216 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-01-22 22:47:12,206 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 55) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-01-22 22:47:12,223 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2019-01-22 22:47:12,225 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2019-01-22 22:47:12,247 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-01-22 22:47:12,254 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2019-01-22 22:47:12,288 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-01-22 22:47:12,297 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-01-22 22:47:12,315 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-01-22 22:47:12,319 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.8.Final
+2019-01-22 22:47:12,331 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 22:47:12,389 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2019-01-22 22:47:12,390 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-01-22 22:47:12,399 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.0.13.Final starting
+2019-01-22 22:47:12,632 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-01-22 22:47:12,633 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-01-22 22:47:12,679 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-01-22 22:47:12,700 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2019-01-22 22:47:12,702 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2019-01-22 22:47:12,782 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:8080
+2019-01-22 22:47:12,872 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2019-01-22 22:47:12,995 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-01-22 22:47:13,252 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-01-22 22:47:13,280 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-01-22 22:47:13,293 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /home/matheus/Documentos/Programacao/Java/wildfly-14.0.1.Final/standalone/deployments
+2019-01-22 22:47:13,302 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name: "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 22:47:13,302 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "sispro.ear" (runtime-name: "sispro.ear")
+2019-01-22 22:47:13,419 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:8443
+2019-01-22 22:47:13,549 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2019-01-22 22:47:14,244 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment SISPRO-0.0.1-SNAPSHOT.war
+2019-01-22 22:47:14,458 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 6.0.13.Final
+2019-01-22 22:47:14,513 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2019-01-22 22:47:14,787 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-01-22 22:47:14,864 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-1) WFLYRS0015: No Servlet declaration found for JAX-RS application.  In SISPRO-0.0.1-SNAPSHOT.war either provide a class that extends javax.ws.rs.core.Application or declare a servlet class in web.xml.
+2019-01-22 22:47:14,884 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 3.0.5 (Final)
+2019-01-22 22:47:15,199 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-7) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-01-22 22:47:15,803 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 73) Inicializando Mojarra 2.3.5.SP2 para o contexto '/SISPRO-0.0.1-SNAPSHOT'
+2019-01-22 22:47:16,455 WARN  [io.jaegertracing.internal.senders.SenderResolver] (ServerService Thread Pool -- 73) No suitable sender found. Using NoopSender, meaning that data will not be sent anywhere!
+2019-01-22 22:47:16,495 INFO  [io.jaegertracing.Configuration] (ServerService Thread Pool -- 73) Initialized tracer=JaegerTracer(version=Java-0.30.6, serviceName=SISPRO-0.0.1-SNAPSHOT.war, reporter=RemoteReporter(sender=NoopSender(), closeEnqueueTimeout=1000), sampler=RemoteControlledSampler(maxOperations=2000, manager=HttpSamplingManager(hostPort=localhost:5778), sampler=ProbabilisticSampler(tags={sampler.type=probabilistic, sampler.param=0.001})), tags={hostname=matheus-pc, jaeger.version=Java-0.30.6, ip=127.0.1.1}, zipkinSharedRpcSpan=false, expandExceptionLogs=false)
+2019-01-22 22:47:16,525 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0021: Registered web context: '/SISPRO-0.0.1-SNAPSHOT' for server 'default-server'
+2019-01-22 22:47:16,536 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "SISPRO-0.0.1-SNAPSHOT.war" (runtime-name : "SISPRO-0.0.1-SNAPSHOT.war")
+2019-01-22 22:47:16,537 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "sispro.ear" (runtime-name : "sispro.ear")
+2019-01-22 22:47:16,586 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-01-22 22:47:16,588 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://0.0.0.0:9990/management
+2019-01-22 22:47:16,589 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://0.0.0.0:9990
+2019-01-22 22:47:16,589 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.1.Final (WildFly Core 6.0.2.Final) started in 7333ms - Started 468 of 652 services (329 services are lazy, passive or on-demand)
