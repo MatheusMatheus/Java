@@ -31,10 +31,9 @@ public class FuncionarioService implements IFuncionario {
 
 	private JsonArray toJsonArray(List<Funcionario> funcs) {
 		JsonArrayBuilder list = Json.createArrayBuilder();
-		funcs
-			.stream()
-			.map(e -> e.toJson())
-			.forEach(list::add);
+		funcs.stream()
+			 .map(e -> e.toJson())
+			 .forEach(list::add);
 		return list.build();
 	}
 
