@@ -59,7 +59,7 @@ public class LoginService {
 				.setIssuer(uriInfo.getAbsolutePath().toString())
 				.setIssuedAt(new Date())
                 .setExpiration(toDate(LocalDateTime.now().plusMinutes(15L)))
-                .signWith(SignatureAlgorithm.HS512, key)
+                .signWith(key, SignatureAlgorithm.HS512)
                 .compact();
 	}
 	
