@@ -1,10 +1,10 @@
 model/dao/DAOHistorico.class
-autenticacao/OneTimePasswordAuthenticator.class
 service/HelloRest.class
+autenticacao/OneTimePasswordAuthenticator.class
 configuracao/RestConfiguration.class
-autenticacao/OTP.class
 autenticacao/JWTTokenFilter.class
 autenticacao/KeyGenerator.class
+autenticacao/OTP.class
 service/LoginService.class
 qualifiers/Funcionario.class
 autenticacao/OTPAuthenticated.class

@@ -1,15 +1,15 @@
 package autenticacao;
 
-import java.security.AlgorithmConstraints;
 import java.security.Key;
-import java.security.Signature;
 
 import javax.crypto.spec.SecretKeySpec;
-import javax.xml.crypto.AlgorithmMethod;
+import javax.xml.bind.DatatypeConverter;
 
 import io.jsonwebtoken.SignatureAlgorithm;
 
 public class SimpleKeyGenerator implements KeyGenerator{
+	
+	private static String SECRET_KEY = "CHAVE";
 
 	public SimpleKeyGenerator() {
 		// TODO Auto-generated constructor stub
@@ -17,9 +17,10 @@ public class SimpleKeyGenerator implements KeyGenerator{
 	
 	@Override
 	public Key generateKey() {
-		String keyString = "simplekey";
-        Key key = new SecretKeySpec(keyString.getBytes(), 0, keyString.getBytes().length, String.valueOf(SignatureAlgorithm.HS512));
-        return key;
+		SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
+	    byte[] apiKeySecretBytes = DatatypeConverter.parseBase64Binary(SECRET_KEY);
+	    Key signingKey = new SecretKeySpec(apiKeySecretBytes, signatureAlgorithm.getJcaName());
+        return signingKey;
 	}
 
 }

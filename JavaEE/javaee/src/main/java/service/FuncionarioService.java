@@ -26,10 +26,10 @@ public class FuncionarioService implements IFuncionario {
 	public JsonArray getFuncionarios() {
 		List<Funcionario> funcs = dao.getAll();
 
-		return toJson(funcs);
+		return toJsonArray(funcs);
 	}
 
-	private JsonArray toJson(List<Funcionario> funcs) {
+	private JsonArray toJsonArray(List<Funcionario> funcs) {
 		JsonArrayBuilder list = Json.createArrayBuilder();
 		funcs
 			.stream()

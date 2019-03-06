@@ -1,11 +1,16 @@
 package model;
 
+import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
+import javax.json.JsonObject;
+import javax.json.JsonReader;
+import javax.json.JsonString;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -26,6 +31,17 @@ public class HistoricoSalarial {
 			.map(e -> e.toJson())
 			.forEach(list::add);
 		return list.build();
+	}
+	
+	public List<Salario> toObject(String json) {
+		JsonReader reader = Json.createReader(new StringReader(json));
+		JsonObject object = reader.readObject();
+		
+		JsonArray salariosJson = object.getJsonArray("historico");
+		salariosJson.stream()
+				    .map(e -> Salario.toObject(e.toString()))
+				    .forEach(historico::add);
+		return historico;
 	}
 	
 	
