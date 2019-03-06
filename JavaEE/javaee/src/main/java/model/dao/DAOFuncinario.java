@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -15,17 +16,20 @@ import model.Salario;
 
 @qualifiers.Funcionario
 public class DAOFuncinario implements DAO<Funcionario> {
-	private List<Funcionario> funcionarios = new ArrayList<>();
+	
+	public DAOFuncinario() {
+		BD.funcionarios.addAll(populaFuncionarios());
+		Collections.unmodifiableList(BD.funcionarios);
+	}
 	
 	private List<Funcionario> populaFuncionarios() {
-		List<Funcionario> funcionarios = new ArrayList<>();
 		for(int i = 0; i < 10; i++) {
 			Funcionario funcionario = getFuncionario();
 			funcionario.setSubordinados(populaSubordinados());
 			funcionario.setLogin(getLogin(funcionario));
-			funcionarios.add(funcionario);
+			BD.funcionarios.add(funcionario);
 		}
-		return funcionarios;
+		return BD.funcionarios;
 	}
 	
 	public List<Funcionario> populaSubordinados() {
@@ -45,7 +49,7 @@ public class DAOFuncinario implements DAO<Funcionario> {
 	}
 	
 	public List<Funcionario> getFuncionarios() {
-		return this.funcionarios;
+		return BD.funcionarios;
 	}
 	
 	private static Funcionario getFuncionario() {
@@ -75,9 +79,18 @@ public class DAOFuncinario implements DAO<Funcionario> {
 	}
 
 	@Override
-	public Funcionario findById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+	public Funcionario findById(String id) {
+		return BD.funcionarios.stream()
+						   .filter(f -> f.getMatricula().equals(id))
+						   .findFirst().orElse(getSubordinado(id));
+	}
+	
+	private Funcionario getSubordinado(String matricula) {
+		return BD.funcionarios.stream()
+				   .map(f -> f.getSubordinados())
+				   .flatMap(f -> f.stream())
+				   .filter(f -> f.getMatricula().equals(matricula))
+				   .findFirst().orElse(null);
 	}
 
 	@Override

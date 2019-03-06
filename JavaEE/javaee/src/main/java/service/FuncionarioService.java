@@ -5,6 +5,7 @@ import java.util.List;
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
+import javax.json.JsonObject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -35,6 +36,19 @@ public class FuncionarioService implements IFuncionario {
 			 .map(e -> e.toJson())
 			 .forEach(list::add);
 		return list.build();
+	}
+
+	@Override
+	public JsonObject getFuncionario(String matricula) {
+		Funcionario funcionario = dao.findById(matricula);
+		if(funcionario == null)
+			return Json.createObjectBuilder()
+					   .add("funcionario", "nao encontrado")
+					   .build();
+		
+		return Json.createObjectBuilder()
+				   .add("funcionario", funcionario.toJson())
+				   .build();
 	}
 
 }

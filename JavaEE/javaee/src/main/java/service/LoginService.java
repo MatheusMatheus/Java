@@ -48,8 +48,9 @@ public class LoginService {
 	}
 
 	private void authenticate(String login, String senha) {
+		// TODO: Implementar DAO
 		if(Objects.isNull(login) || Objects.isNull(senha))
-			throw new SecurityException("Invalid user/password"); 
+			throw new SecurityException("Usuário/Senha inválidos"); 
 	}
 
 	private String issueToken(String login) {
