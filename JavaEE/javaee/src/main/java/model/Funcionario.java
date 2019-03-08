@@ -13,11 +13,13 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
 public class Funcionario {
 	@Id
 	private String matricula;
@@ -32,12 +34,8 @@ public class Funcionario {
 	
 	private Funcionario superior;
 	
-	public void setHistoricoSalarial(JsonArray jsonArray) {
-		this.historicoSalarial = new HistoricoSalarial().toObject(jsonArray);
-	}
-	
-	public void setHistoricoSalarial(HistoricoSalarial historicoSalarial) {
-		this.historicoSalarial = historicoSalarial;
+	public Funcionario(String json) {
+		toObject(json);
 	}
 	
 	/**
@@ -60,8 +58,7 @@ public class Funcionario {
 		return Json.createObjectBuilder().build();
 	}
 
-	
-	public Funcionario toObject(String json) {
+	private Funcionario toObject(String json) {
 		
 		JsonReader reader = Json.createReader(new StringReader(json));
 		JsonObject jsonObject = reader.readObject();
@@ -73,5 +70,13 @@ public class Funcionario {
 		//this.setLogin(jsonObject.getJsonObject("login"));
 		this.setHistoricoSalarial(jsonObject.getJsonArray("historico"));
 		return this;
+	}
+	
+	public void setHistoricoSalarial(JsonArray jsonArray) {
+		this.historicoSalarial = new HistoricoSalarial().toObject(jsonArray);
+	}
+	
+	public void setHistoricoSalarial(HistoricoSalarial historicoSalarial) {
+		this.historicoSalarial = historicoSalarial;
 	}
 }

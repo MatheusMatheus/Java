@@ -3,6 +3,7 @@ package service;
 import java.util.List;
 import java.util.Objects;
 
+import javax.inject.Inject;
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
@@ -16,7 +17,6 @@ import javax.ws.rs.core.Response.Status;
 
 import model.Funcionario;
 import model.dao.DAO;
-import model.dao.DAOFuncinario;
 import rest.IFuncionario;
 
 @Path("funcionarios")
@@ -24,9 +24,20 @@ import rest.IFuncionario;
 @Produces(MediaType.APPLICATION_JSON)
 public class FuncionarioService implements IFuncionario {
 
-	private DAO<Funcionario> dao = new DAOFuncinario();
+	@Inject 
+	@qualifiers.Funcionario
+	private DAO<Funcionario> dao;
+	
+	@Override
+	public Response inserir(String funcJson) {
+		Funcionario funcionario = new Funcionario(funcJson);
+		return Objects.nonNull(dao.save(funcionario)) 
+				? Response.ok().build() 
+				: Response.notModified().build();
+	}
 
 	@Override
+	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	public Response getFuncionarios() {
 		List<Funcionario> funcs = dao.getAll();
 		return Response.ok().entity(toJsonArray(funcs)).build();
@@ -54,16 +65,5 @@ public class FuncionarioService implements IFuncionario {
 			 .map(e -> e.toJson())
 			 .forEach(list::add);
 		return list.build();
-	}
-
-
-	@Override
-	public Response inserir(String funcJson) {
-		Funcionario funcionario = new Funcionario();
-		funcionario = funcionario.toObject(funcJson);
-		return Objects.nonNull(dao.save(funcionario)) 
-				? Response.ok().build() 
-				: Response.notModified().build();
-		 
 	}
 }
