@@ -1,10 +1,7 @@
 package model;
 
-import java.io.StringReader;
-
 import javax.json.Json;
 import javax.json.JsonObject;
-import javax.json.JsonReader;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
@@ -21,12 +18,6 @@ public class Login {
 	private String senha;
 	@OneToOne(mappedBy = "login")
 	private Funcionario funcionario;
-	
-	
-	public void setFuncionario(Funcionario funcionario) {
-		this.funcionario = funcionario;
-		this.funcionario.setLogin(this);
-	}
 	
 	/**
 	 * Converte o objeto Java para um objeto JSON
@@ -45,11 +36,9 @@ public class Login {
 	 * @param json
 	 * @return Objeto Java
 	 */
-	public Login toObject(String json) {
-		JsonReader reader = Json.createReader(new StringReader(json));
-		JsonObject jsonObject = reader.readObject();
-		setSenha(jsonObject.getString("senha"));
-		setUsuario(jsonObject.getString("usuario"));
+	public Login toObject(JsonObject json) {
+		setSenha(json.getString("senha"));
+		setUsuario(json.getString("usuario"));
 		return this;
 	}
 	

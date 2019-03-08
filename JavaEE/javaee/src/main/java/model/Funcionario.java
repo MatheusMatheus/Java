@@ -1,21 +1,16 @@
 package model;
 
 import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Objects;
 
 import javax.json.Json;
 import javax.json.JsonArray;
-import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
-import javax.persistence.Transient;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -29,20 +24,20 @@ public class Funcionario {
 	private String nome;
 	private int idade;
 	private HistoricoSalarial historicoSalarial;	
+	private boolean diretor;
 	
 	@OneToOne
 	@JoinColumn(name = "login_fk")
 	private Login login;
 	
+	private Funcionario superior;
 	
-	@ElementCollection(fetch = FetchType.LAZY)
-	private List<Funcionario> subordinados;
+	public void setHistoricoSalarial(JsonArray jsonArray) {
+		this.historicoSalarial = new HistoricoSalarial().toObject(jsonArray);
+	}
 	
-	@Transient
-	private int nivel;
-	
-	public Funcionario() {
-		this.subordinados = new ArrayList<>();
+	public void setHistoricoSalarial(HistoricoSalarial historicoSalarial) {
+		this.historicoSalarial = historicoSalarial;
 	}
 	
 	/**
@@ -50,37 +45,33 @@ public class Funcionario {
 	 * @return Objeto JSON
 	 */
 	public JsonObject toJson() {
-		return Json.createObjectBuilder()
-				.add("matricula", this.matricula)
-				.add("nome", this.nome)
-				.add("idade", this.idade)
-				.add("nivel", this.nivel)
-				.add("login", this.login.toJson())
-				.add("historico", this.historicoSalarial.toJson())
-				.add("subordinados", toJsonArray())
-				.build();
+		if(Objects.nonNull(superior)) {
+			return Json.createObjectBuilder()
+					.add("matricula", this.matricula)
+					.add("nome", this.nome)
+					.add("idade", this.idade)
+					.add("diretor", this.diretor)
+					//.add("login", this.login.toJson())
+					.add("historico", this.historicoSalarial.toJson())
+					.add("superior", this.superior.matricula)
+					.build();
+		}	
+		
+		return Json.createObjectBuilder().build();
 	}
-	
-	private JsonArray toJsonArray() {
-		JsonArrayBuilder list = Json.createArrayBuilder();
-		subordinados
-			.stream()
-			.map(e -> e.toJson())
-			.forEach(list::add);
-		return list.build();
-	}
+
 	
 	public Funcionario toObject(String json) {
-		Funcionario f = new Funcionario();
 		
 		JsonReader reader = Json.createReader(new StringReader(json));
-		JsonObject object = reader.readObject();
+		JsonObject jsonObject = reader.readObject();
 		
-		f.setMatricula(object.getString("matricula"));
-		f.setNome(object.getString("nome"));
-		f.setIdade(object.getInt("idade"));
-		f.setNivel(object.getInt("nivel"));
-		f.setLogin(login.toObject(json));
-		return f;
+		this.setMatricula(jsonObject.getString("matricula"));
+		this.setNome(jsonObject.getString("nome"));
+		this.setIdade(jsonObject.getInt("idade"));
+		this.setDiretor(jsonObject.getBoolean("diretor"));
+		//this.setLogin(jsonObject.getJsonObject("login"));
+		this.setHistoricoSalarial(jsonObject.getJsonArray("historico"));
+		return this;
 	}
 }

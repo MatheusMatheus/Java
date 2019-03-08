@@ -1,6 +1,7 @@
 package service;
 
 import java.util.List;
+import java.util.Objects;
 
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -10,6 +11,8 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
 
 import model.Funcionario;
 import model.dao.DAO;
@@ -24,10 +27,25 @@ public class FuncionarioService implements IFuncionario {
 	private DAO<Funcionario> dao = new DAOFuncinario();
 
 	@Override
-	public JsonArray getFuncionarios() {
+	public Response getFuncionarios() {
 		List<Funcionario> funcs = dao.getAll();
+		return Response.ok().entity(toJsonArray(funcs)).build();
+	}
 
-		return toJsonArray(funcs);
+
+	@Override
+	public Response getFuncionario(String matricula) {
+		Funcionario funcionario = dao.findById(matricula);
+		if(funcionario != null)
+			return Response.ok().entity(toJson(funcionario)).build();
+		
+		return Response.status(Status.NO_CONTENT).build();
+	}
+	
+	private JsonObject toJson(Funcionario funcionario) {
+		return Json.createObjectBuilder()
+				   .add("funcionario", funcionario.toJson())
+				   .build();		
 	}
 
 	private JsonArray toJsonArray(List<Funcionario> funcs) {
@@ -38,17 +56,14 @@ public class FuncionarioService implements IFuncionario {
 		return list.build();
 	}
 
-	@Override
-	public JsonObject getFuncionario(String matricula) {
-		Funcionario funcionario = dao.findById(matricula);
-		if(funcionario == null)
-			return Json.createObjectBuilder()
-					   .add("funcionario", "nao encontrado")
-					   .build();
-		
-		return Json.createObjectBuilder()
-				   .add("funcionario", funcionario.toJson())
-				   .build();
-	}
 
+	@Override
+	public Response inserir(String funcJson) {
+		Funcionario funcionario = new Funcionario();
+		funcionario = funcionario.toObject(funcJson);
+		return Objects.nonNull(dao.save(funcionario)) 
+				? Response.ok().build() 
+				: Response.notModified().build();
+		 
+	}
 }

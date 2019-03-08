@@ -1,12 +1,10 @@
 package model;
 
-import java.io.StringReader;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 import javax.json.Json;
 import javax.json.JsonObject;
-import javax.json.JsonReader;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -26,9 +24,7 @@ public class Salario {
 				.build();
 	}
 	
-	public static Salario toObject(String json) {
-		JsonReader reader = Json.createReader(new StringReader(json));
-		JsonObject jsonObject = reader.readObject();
+	public static Salario toObject(JsonObject jsonObject) {
 		
 		Salario s = new Salario();
 		s.setCargo(jsonObject.getString("cargo"));

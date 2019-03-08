@@ -1,6 +1,6 @@
 model/dao/DAOHistorico.class
-service/HelloRest.class
 autenticacao/OneTimePasswordAuthenticator.class
+service/HelloRest.class
 autenticacao/JWTTokenFilter.class
 autenticacao/KeyGenerator.class
 autenticacao/OTPAuthenticated.class

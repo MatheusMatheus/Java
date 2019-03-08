@@ -5,7 +5,6 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -18,18 +17,17 @@ import model.Salario;
 public class DAOFuncinario implements DAO<Funcionario> {
 	
 	public DAOFuncinario() {
-		BD.funcionarios.addAll(populaFuncionarios());
-		Collections.unmodifiableList(BD.funcionarios);
+		//BD.funcionarios.addAll(populaFuncionarios());
 	}
 	
 	private List<Funcionario> populaFuncionarios() {
 		for(int i = 0; i < 10; i++) {
 			Funcionario funcionario = getFuncionario();
-			funcionario.setSubordinados(populaSubordinados());
+			funcionario.setSuperior(getFuncionario());
 			funcionario.setLogin(getLogin(funcionario));
-			BD.funcionarios.add(funcionario);
+			BD.getLista().add(funcionario);
 		}
-		return BD.funcionarios;
+		return BD.getLista();
 	}
 	
 	public List<Funcionario> populaSubordinados() {
@@ -48,16 +46,11 @@ public class DAOFuncinario implements DAO<Funcionario> {
 		return historico;
 	}
 	
-	public List<Funcionario> getFuncionarios() {
-		return BD.funcionarios;
-	}
-	
 	private static Funcionario getFuncionario() {
 		Funcionario funcionario = new Funcionario();
 		funcionario.setNome("Funcionario " + new Random().nextInt(500));
 		funcionario.setIdade(new Random().nextInt(100));
 		funcionario.setMatricula(String.valueOf(new Random().nextInt(56565)));
-		funcionario.setNivel(new Random().nextInt(5));
 		funcionario.setHistoricoSalarial(getHistorico());
 		return funcionario;
 	}
@@ -80,15 +73,13 @@ public class DAOFuncinario implements DAO<Funcionario> {
 
 	@Override
 	public Funcionario findById(String id) {
-		return BD.funcionarios.stream()
+		return BD.getLista().stream()
 						   .filter(f -> f.getMatricula().equals(id))
 						   .findFirst().orElse(getSubordinado(id));
 	}
 	
 	private Funcionario getSubordinado(String matricula) {
-		return BD.funcionarios.stream()
-				   .map(f -> f.getSubordinados())
-				   .flatMap(f -> f.stream())
+		return BD.getLista().stream()
 				   .filter(f -> f.getMatricula().equals(matricula))
 				   .findFirst().orElse(null);
 	}
@@ -106,14 +97,13 @@ public class DAOFuncinario implements DAO<Funcionario> {
 	}
 
 	@Override
-	public Funcionario save(Funcionario entity) {
-		// TODO Auto-generated method stub
-		return null;
+	public Funcionario save(Funcionario funcionario) {
+		return BD.getLista().add(funcionario) ? funcionario : null;
 	}
 
 	@Override
 	public List<Funcionario> getAll() {
-		return populaFuncionarios();
+		return BD.getLista();
 	}
 	
 }

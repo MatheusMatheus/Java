@@ -17,10 +17,10 @@ local.properties
 .recommenders
 
 
-javaee/.classpath
-javaee/.project
-javaee/.settings/*
-
+.classpath
+.project
+.settings/*
+.target/*
 
 # External tool builders
 .externalToolBuilders/

@@ -6,5 +6,10 @@ import java.util.List;
 import model.Funcionario;
 
 public class BD {
-	public static List<Funcionario> funcionarios = new ArrayList<>();
+	private static List<Funcionario> funcionarios;
+	
+	
+	public static List<Funcionario> getLista() {
+		return (funcionarios == null) ? new ArrayList<>() : funcionarios;
+	}
 }
