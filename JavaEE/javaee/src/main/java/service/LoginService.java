@@ -3,7 +3,6 @@ package service;
 import java.security.Key;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.time.ZoneOffset;
 import java.util.Date;
 import java.util.Objects;
 
@@ -28,7 +27,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class LoginService {
-
+	
 	@Inject
 	private KeyGenerator keyGenerator;
 
@@ -49,20 +48,20 @@ public class LoginService {
 	}
 
 	private void authenticate(String login, String senha) {
+		// TODO: Implementar DAO
 		if(Objects.isNull(login) || Objects.isNull(senha))
-			throw new SecurityException("Invalid user/password"); 
+			throw new SecurityException("Usuário/Senha inválidos"); 
 	}
 
 	private String issueToken(String login) {
 		Key key = keyGenerator.generateKey();
-		String jwtToken = Jwts.builder()
+		return Jwts.builder()
 				.setSubject(login)
 				.setIssuer(uriInfo.getAbsolutePath().toString())
 				.setIssuedAt(new Date())
                 .setExpiration(toDate(LocalDateTime.now().plusMinutes(15L)))
-                .signWith(SignatureAlgorithm.HS512, key)
+                .signWith(key, SignatureAlgorithm.HS512)
                 .compact();
-		return jwtToken;
 	}
 	
 	private Date toDate(LocalDateTime localDateTime) {

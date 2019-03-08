@@ -28,7 +28,7 @@ public class DAOGenerico<T> implements DAO<T> {
 	}
 
 	@Override
-	public T findById(Long id) {
+	public T findById(String id) {
 		return entityManager.find(classe, id);
 	}
 

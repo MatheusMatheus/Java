@@ -28,10 +28,10 @@ public class JWTTokenFilter implements ContainerRequestFilter {
 		try {
 			String authorizationHeader = requestContext.getHeaderString(HttpHeaders.AUTHORIZATION);
 
-			// Extract the token from the HTTP Authorization header
+			// Extrai o token do header Authorization
 			String token = authorizationHeader.substring("Bearer".length()).trim();
 
-			// Validate the token
+			// Valida o token
 			Key key = keyGenerator.generateKey();
 			Jwts.parser().setSigningKey(key).parseClaimsJws(token);
 
