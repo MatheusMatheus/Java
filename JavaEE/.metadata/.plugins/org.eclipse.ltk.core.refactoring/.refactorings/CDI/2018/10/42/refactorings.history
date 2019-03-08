@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;beans.LogginProducer&apos; to &apos;LoggingProducer&apos;&#x0A;- Original project: &apos;CDI&apos;&#x0A;- Original element: &apos;beans.LogginProducer&apos;&#x0A;- Renamed element: &apos;beans.LoggingProducer&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;LogginProducer&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;beans{LogginProducer.java[LogginProducer" matchStrategy="1" name="LoggingProducer" qualified="false" references="true" similarDeclarations="false" stamp="1539569867315" textual="false" version="1.0"/>
-</session>
