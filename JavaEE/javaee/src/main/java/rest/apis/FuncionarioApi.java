@@ -1,4 +1,4 @@
-package rest;
+package rest.apis;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -8,7 +8,7 @@ import javax.ws.rs.core.Response;
 
 import qualifiers.JWTTokenNeeded;
 
-public interface IFuncionario {
+public interface FuncionarioApi {
 	@GET
 	@Path("listar")
 	@JWTTokenNeeded

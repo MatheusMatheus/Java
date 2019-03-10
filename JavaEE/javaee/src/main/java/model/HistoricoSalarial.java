@@ -6,6 +6,7 @@ import java.util.List;
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
+import javax.persistence.OneToMany;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -13,6 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class HistoricoSalarial {
+	@OneToMany
 	private List<Salario> historico;
 
 	public HistoricoSalarial() {
@@ -21,10 +23,9 @@ public class HistoricoSalarial {
 
 	public JsonArray toJson() {
 		JsonArrayBuilder list = Json.createArrayBuilder();
-		historico
-			.stream()
-			.map(e -> e.toJson())
-			.forEach(list::add);
+		historico.stream()
+				 .map(e -> e.toJson())
+				 .forEach(list::add);
 		return list.build();
 	}
 	

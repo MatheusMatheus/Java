@@ -1,4 +1,4 @@
-package service;
+package rest.services;
 
 import java.security.Key;
 import java.time.LocalDateTime;
@@ -19,9 +19,9 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriInfo;
 
-import autenticacao.KeyGenerator;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import rest.autenticacao.KeyGenerator;
 
 @Path("login")
 @Produces(MediaType.APPLICATION_JSON)

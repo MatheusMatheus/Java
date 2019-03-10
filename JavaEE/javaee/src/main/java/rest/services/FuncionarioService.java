@@ -1,4 +1,4 @@
-package service;
+package rest.services;
 
 import java.util.List;
 import java.util.Objects;
@@ -17,12 +17,12 @@ import javax.ws.rs.core.Response.Status;
 
 import model.Funcionario;
 import model.dao.DAO;
-import rest.IFuncionario;
+import rest.apis.FuncionarioApi;
 
 @Path("funcionarios")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-public class FuncionarioService implements IFuncionario {
+public class FuncionarioService implements FuncionarioApi {
 
 	@Inject 
 	@qualifiers.Funcionario

@@ -8,6 +8,8 @@ import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
@@ -25,8 +27,12 @@ public class Funcionario {
 	private String matricula;
 	private String nome;
 	private int idade;
+	@OneToOne
 	private HistoricoSalarial historicoSalarial;	
-	private boolean diretor;
+	private boolean permissao;
+	
+	@Enumerated(EnumType.STRING)
+	private Cargo cargo;
 	
 	@OneToOne
 	@JoinColumn(name = "login_fk")
@@ -48,10 +54,11 @@ public class Funcionario {
 					.add("matricula", this.matricula)
 					.add("nome", this.nome)
 					.add("idade", this.idade)
-					.add("diretor", this.diretor)
+					.add("permissao", this.permissao)
 					//.add("login", this.login.toJson())
 					.add("historico", this.historicoSalarial.toJson())
 					.add("superior", this.superior.matricula)
+					.add("cargo", cargo.toString())
 					.build();
 		}	
 		
@@ -66,10 +73,20 @@ public class Funcionario {
 		this.setMatricula(jsonObject.getString("matricula"));
 		this.setNome(jsonObject.getString("nome"));
 		this.setIdade(jsonObject.getInt("idade"));
-		this.setDiretor(jsonObject.getBoolean("diretor"));
-		//this.setLogin(jsonObject.getJsonObject("login"));
+		this.setPermissao(jsonObject.getBoolean("permissao"));
+		this.setLogin(jsonObject.getJsonObject("login"));
 		this.setHistoricoSalarial(jsonObject.getJsonArray("historico"));
+		this.setCargo(Cargo.valueOf(jsonObject.getString("cargo")));
 		return this;
+	}
+	
+	public void setLogin(JsonObject jsonObject) {
+		Login login = this.login.toObject(jsonObject);
+		setLogin(login);
+	}
+	
+	public void setLogin(Login login) {
+		login.setFuncionario(this);
 	}
 	
 	public void setHistoricoSalarial(JsonArray jsonArray) {

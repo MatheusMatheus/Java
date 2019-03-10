@@ -1,4 +1,4 @@
-package autenticacao;
+package rest.autenticacao;
 
 import java.io.IOException;
 import java.security.Key;
